@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DATA TO MODIFY
+
+
+\newcommand{\myProfileId}{1}		%1 PHP Developer %2 Java Developer 
+                             	%3 Embended Systems and Electro 4% Systems Admin 5% Networks
+\newcommand{\myDesideredEmployment}{My desired job}
+
+\newcommand\mySkillsForJobPosition[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}
+ 
+ \newcommand\mySkills[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+    \cvcomputer{Languages}{<Programming Languages>} {Scripting}{<Scripting languages>}
+	\cvcomputer{Platforms}{<Platforms>}  {DB}{<Databases>}
+	\cvcomputer{Tools}{<Tools>} {Programs} {<Programs>}
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}
+ 
+ \newcommand\myExperience[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+	\subsection{Working}  %Working
+	\cventry{start-end}{<Position Held>}{<Name of employer>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+	\cventry{start-end}{<Position Held>}{<Name of employer>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+
+	\subsection{Academic} %Academica
+	\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+	\subsection{Various}  %Other
+	\cventry{start-end}{<Brief Description>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}
+ 
+ \newcommand\myEducation[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+	\cventry{start-end}{<Title awarded>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+	\cventry{start-end}{<Title awarded>}{<Institution>}{<Place>}{<Country>}{<Description>} % arguments 3 to 6 are optional
+	%Subsection
+	%\subsection{Master thesis}
+	%\cvline{title}{\emph{Title}}
+	%\cvline{supervisors}{Supervisors}
+	%\cvline{description}{\small Short thesis abstract}
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}
+ 
+  \newcommand\myExtraInformation[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+	\cvline{<Extra Content>}{\small <Description>}
+	\small
+	\cvlistitem{\href{...}{<Eventual link>}}
+	\cvlistitem{\href{...}{<Eventual link>}}
+
+	\closesection{}                   % needed to renewcommands
+	\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}
+ 
+ \newcommand\myReferences[1]{ 		
+ \ifcase#1  
+  \or% Number 1
+	\cvline{<Extra Content>}{\small <Description>}
+	\small
+	\cvlistitem{\href{...}{<Eventual link>}}
+	\cvlistitem{\href{...}{<Eventual link>}}
+
+	\closesection{}                   % needed to renewcommands
+	\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+  \or% Number 2
+    It's 2!
+  \or% Number 3
+    It's 3!
+ \fi}

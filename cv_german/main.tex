@@ -1,0 +1,116 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[T1]{fontenc}
+% character encoding
+\usepackage[utf8x]{inputenc}                   % replace by the encoding you are using
+\usepackage[german]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%DATA TO MODIFY
+ \input{data.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%END-DATA TO MODIFY
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
+
+% personal data
+\firstname{Name}
+\familyname{Family Name}
+\title{Lebenslauf}               % optional, remove the line if not wanted
+\address{Stree}{Postal code, Town}    % optional, remove the line if not wanted
+\mobile{Mobile phone}                    % optional, remove the line if not wanted
+\phone{Phone number}                      % optional, remove the line if not wanted
+\fax{Fax number}                          % optional, remove the line if not wanted
+\email{Email}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[70pt]{cv.png}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{"Success is the ability to go from failure to failure without losing your enthusiasm." -- Winston Churchill}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%Section Personal data
+\section{Angaben zur Person}
+\cvcomputer{Geburtsdatum}{\small 01/01/1900 (Country)\normalsize}{\hspace{-10mm}Staatsangehörigkeit}{\small  Country \normalsize}
+\cvcomputer{Skype}{\small your skype \normalsize}{Führerschein}{\small  B \normalsize}
+\cvcomputer{Elance}{\small Link to profile \normalsize}{LinkedIn}{\small  Link to profile \normalsize}
+\cvline{Blog}{\small \url{Link to profile}\normalsize}
+
+
+%Section Desired Job and Skills for it
+\section{Angestrebte Stelle und Fähigkeiten}
+\cvline{}{\Large \myDesideredEmployment}
+\cvline{}{\small \mySkillsForJobPosition{\myProfileId} 
+}
+
+%Section My Skills
+\section{Fähigkeiten} 
+\mySkills{\myProfileId}
+ 
+%Section Laboral experience
+\section{Berufserfahrung}
+\myExperience{\myProfileId}
+
+%Section Education
+\section{Schul und Berufsbildung} 
+\myEducation{\myProfileId}
+
+
+%Section Languages
+\section{Persönliche Fähigkeiten}
+
+\hspace{25mm}\small Self-assessment European level \href{http://europass.cedefop.europa.eu/en/resources/european-language-levels-cefr}{CEFR} (C2 maximum evaluation)\normalsize
+\vspace{5mm}
+
+\begin{tabular}{p{67mm} p{40mm} p{40mm} p{20mm}}
+& \textbf{Understanding} & \textbf{Speaking} & \textbf{Writing} \\
+\end{tabular}
+
+\begin{tabular}{p{67mm} p{20mm} p{20mm} p{20mm} p{20mm} p{20mm}}
+& Listening & Reading & Interaction & Production & \\
+\end{tabular}
+
+\vspace{3mm}
+%lvl should be in this range A1 < A2 < B1 < B2 < C1 < C2
+\cvlanguage{<Lang 1>}{<Level>}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		lvl & lvl & lvl & lvl & lvl
+	\end{tabular}}
+\cvlanguage{<Lang 2>}{<Level>}{
+	\begin{tabular}{p{20mm} p{20mm} p{20mm} p{20mm} p{21mm}}
+		lvl & lvl & lvl & lvl & lvl
+	\end{tabular}}
+
+%Section Hobbies
+\section{Hobbys}
+\cvline{}{\small <Description>}
+
+%Section Extra
+\section{Zusätzliche Informationen}
+\myExtraInformation{\myProfileId}
+
+%Section References
+\section{Referenzen / Anlagen}
+\myReferences{\myProfileId}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
